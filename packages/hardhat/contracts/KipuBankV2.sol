@@ -2,10 +2,11 @@
 pragma solidity ^0.8.20;
 
 /**
- * @title KipuBank
+ * @title KipuBankV2
  * @dev A secure vault contract for depositing and withdrawing ETH with withdrawal limits
+ * @notice This is an upgraded version of the KipuBank contract
  */
-contract KipuBank {
+contract KipuBankV2 {
     // Custom errors
     error ExceedsBankCap(uint256 amount, uint256 bankCap);
     error ExceedsWithdrawalLimit(uint256 amount, uint256 withdrawalLimit);
